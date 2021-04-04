@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\micha\\source\\repos\\Time Blocking App\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj": {}
+    "C:\\Users\\micha\\source\\repos\\TimeBlockingApp\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\micha\\source\\repos\\Time Blocking App\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj": {
+    "C:\\Users\\micha\\source\\repos\\TimeBlockingApp\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micha\\source\\repos\\Time Blocking App\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\source\\repos\\TimeBlockingApp\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj",
         "projectName": "Time Blocking App",
-        "projectPath": "C:\\Users\\micha\\source\\repos\\Time Blocking App\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj",
+        "projectPath": "C:\\Users\\micha\\source\\repos\\TimeBlockingApp\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micha\\source\\repos\\Time Blocking App\\Time Blocking App\\Time Blocking App\\obj\\",
+        "outputPath": "C:\\Users\\micha\\source\\repos\\TimeBlockingApp\\Time Blocking App\\Time Blocking App\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
