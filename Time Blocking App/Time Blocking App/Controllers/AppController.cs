@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Time_Blocking_App.Controllers.Navigation;
 using Time_Blocking_App.Enums;
 using Time_Blocking_App.EventArguments;
+using Time_Blocking_App.Pages;
 
 namespace Time_Blocking_App.Controllers
 {
@@ -39,6 +40,11 @@ namespace Time_Blocking_App.Controllers
         #endregion
 
         #region Event Handlers
+        /// <summary>
+        /// Handles a navigation request between app pages.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnNavigationRequested(object sender, NavigationRequestedEventArgs e)
         {
             // If this is a back request, go back and exit this method.
@@ -55,12 +61,57 @@ namespace Time_Blocking_App.Controllers
                     this.NavState.GotoHome();
                     break;
                 case PageTypes.Settings:
-                    // Navigate to the home page.
+                    // Navigate to the settings page.
                     this.NavState.GotoSettings();
                     break;
                 default:
                     break;
             }
+        }
+
+        /// <summary>
+        /// Handles when a navigation between pages is complete. Subscribes to the new page's
+        /// events and unsubscribes from the old page's events.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnNavigated(object sender, NavigatedEventArgs e)
+        {
+            // Subscribe to the new page's events.
+            if (e.PageNavigatedTo is HomePage homePage)
+            {
+
+            }
+            else if (e.PageNavigatedTo is SettingsPage settingsPage)
+            {
+                settingsPage.ConnectServiceRequested += this.ConnectedServiceRequested;
+            }
+
+            // Unsubscribe from the old page's events. This is to clear any handles on the page
+            //      so that garbage collection deletes it and prevents a memory leak.
+            if (e.PageNavigatedFrom is null)
+            {
+                // There is no from page (this is the app initialization), so nothing more to do.
+                return;
+            }
+            else if (e.PageNavigatedFrom is HomePage homePageFrom)
+            {
+
+            }
+            else if (e.PageNavigatedFrom is SettingsPage settingsPageFrom)
+            {
+                settingsPageFrom.ConnectServiceRequested -= this.ConnectedServiceRequested;
+            }
+        }
+
+        /// <summary>
+        /// Handles when a request is received to initiate connecting an integrated service.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ConnectedServiceRequested(object sender, ConnectServiceRequestedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Nailed it");
         }
         #endregion
 
@@ -73,6 +124,7 @@ namespace Time_Blocking_App.Controllers
         {
             // Subscribe to the root page's events.
             rootPage.NavigationRequested += this.OnNavigationRequested;
+            rootPage.Navigated += this.OnNavigated;
 
             // Set the given page as the root page.
             this.RootPage = rootPage;

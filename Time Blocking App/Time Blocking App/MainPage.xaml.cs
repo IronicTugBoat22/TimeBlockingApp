@@ -36,6 +36,11 @@ namespace Time_Blocking_App
             (PageTypes.Settings, typeof(SettingsPage))
         };
 
+        /// <summary>
+        /// The page in the NavView prior to executing a requested navigation.
+        /// </summary>
+        private Page CurrentNavViewPage { get; set; }
+
         #region Events
         public delegate void NavigationRequestedHandler(object sender, NavigationRequestedEventArgs e);
         /// <summary>
@@ -48,11 +53,24 @@ namespace Time_Blocking_App
             NavigationRequestedEventArgs args = new NavigationRequestedEventArgs(toPage, isBackRequest);
             this.NavigationRequested?.Invoke(this, args);
         }
+
+        public delegate void NavigatedHandler(object sender, NavigatedEventArgs e);
+        /// <summary>
+        /// Raised when a page navigation has completed.
+        /// </summary>
+        public event NavigatedHandler Navigated;
+        private void RaiseNavigated(Page fromPage, Page toPage)
+        {
+            // Create the args and call the listening event handlers, if there are any.
+            NavigatedEventArgs args = new NavigatedEventArgs(fromPage, toPage);
+            this.Navigated?.Invoke(this, args);
+        }
         #endregion
 
         public MainPage()
         {
             this.InitializeComponent();
+            this.CurrentNavViewPage = null;
         }
 
         /// <summary>
@@ -147,6 +165,10 @@ namespace Time_Blocking_App
 
                 this.NavigationView.Header = ((NavigationViewItem)this.NavigationView.SelectedItem)?.Content?.ToString();
             }
+
+            // Raise the navigated event.
+            Page navigatedToPage = e.Content as Page;
+            this.RaiseNavigated(this.CurrentNavViewPage, navigatedToPage);
         }
 
         #region Methods
@@ -164,6 +186,9 @@ namespace Time_Blocking_App
             {
                 throw new Exception("unexpected");
             }
+
+            // Grab the current page prior to navigation.
+            this.CurrentNavViewPage = this.ContentFrame.Content as Page;
 
             // Tell the content frame inside of the navigation view to navigate pages.
             this.ContentFrame.Navigate(item.Page);

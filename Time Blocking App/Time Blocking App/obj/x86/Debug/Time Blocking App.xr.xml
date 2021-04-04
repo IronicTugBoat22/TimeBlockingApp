@@ -9,6 +9,10 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="RowDefinitions" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="PaneDisplayMode" />
@@ -34,8 +38,21 @@
     <RootType FullName="Time_Blocking_App.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Inlines" />
+      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Time_Blocking_App.Pages.HomePage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Time_Blocking_App.Pages.SettingsPage" />
   </Roots.RootTypes>
 </Roots>

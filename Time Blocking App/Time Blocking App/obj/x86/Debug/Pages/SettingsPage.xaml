@@ -8,8 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock>Settings Page!</TextBlock>
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <!-- ROW 0 -->
+        <TextBlock Grid.Row="0"
+                   Style="{StaticResource HeaderTextBlockStyle}">Settings Page!</TextBlock>
+        
+        <!-- ROW 1 -->
+        <StackPanel Grid.Row="1">
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}">ClickUp</TextBlock>
+            <Button x:ConnectionId='2' x:Name="ConnectClickUpButton"
+                    Content="Connect ClickUp"
+                    Margin="5"
+                                                      ></Button>
+        </StackPanel>
     </Grid>
 </Page>
 

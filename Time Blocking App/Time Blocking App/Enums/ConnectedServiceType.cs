@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 namespace Time_Blocking_App.Enums
 {
     /// <summary>
-    /// Enum for the page types in the app.
+    /// Enum for the types of connected services the app integrates with.
     /// </summary>
-    public enum PageTypes
+    public enum ConnectedServiceType
     {
-        Home,
-        Settings
+        ClickUp
     }
 }
