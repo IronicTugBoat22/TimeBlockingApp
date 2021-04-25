@@ -11,8 +11,12 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Padding" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="PaneDisplayMode" />
@@ -43,6 +47,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Inlines" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Time_Blocking_App.Pages.HomePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
@@ -50,10 +56,15 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Flyout" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
@@ -63,6 +74,23 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Time_Blocking_App.Pages.SettingsPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Time_Blocking_App.Pages.TimeBlocksPage" />
   </Roots.RootTypes>
 </Roots>
