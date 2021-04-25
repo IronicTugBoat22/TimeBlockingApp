@@ -20,6 +20,13 @@
                                     Icon="Home"
                                     Content="Home"
                                     x:Name="HomeNavigationViewItem"></NavigationViewItem>
+                <NavigationViewItem Tag="TimeBlocks"
+                                    Content="Time Blocks"
+                                    x:Name="TimeBlocksNavigationViewItem">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE152;"></FontIcon>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
 
             <ScrollViewer>

@@ -33,6 +33,7 @@ namespace Time_Blocking_App
         private readonly List<(PageTypes Tag, Type Page)> _pages = new List<(PageTypes Tag, Type Page)>
         {
             (PageTypes.Home, typeof(HomePage)),
+            (PageTypes.TimeBlocks, typeof(TimeBlocksPage)),
             (PageTypes.Settings, typeof(SettingsPage))
         };
 
@@ -218,7 +219,10 @@ namespace Time_Blocking_App
         /// </summary>
         public void NavigateBack()
         {
-            this.ContentFrame.GoBack();
+            if (this.ContentFrame.CanGoBack)
+            {
+                this.ContentFrame.GoBack();
+            }
         }
         #endregion
 

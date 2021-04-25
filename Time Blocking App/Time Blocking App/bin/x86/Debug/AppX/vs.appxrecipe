@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>AFC2AE84D29685FAC0192DCB20845C2C2CB45F2F997A2AC57ECE8473A6D0F237</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>64B128C6C04536C6FE4E32093ED739AE105EA3FD0177EF20E2F82E3F6D23ACB9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>90ff0a68-1a57-48ba-bf47-a0aaec2a7c60_1.0.0.0_x86__3pn73vjv4a5p4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>90ff0a68-1a57-48ba-bf47-a0aaec2a7c60_3pn73vjv4a5p4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>90ff0a68-1a57-48ba-bf47-a0aaec2a7c60</RegisteredPackageID>
@@ -30,21 +30,29 @@
     <AppXManifest Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-04T07:10:53.044</Modified>
+      <Modified>2021-04-25T04:30:32.351</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Time Blocking App.exe">
       <PackagePath>entrypoint\Time Blocking App.exe</PackagePath>
-      <Modified>2021-04-04T07:10:51.896</Modified>
+      <Modified>2021-04-25T04:30:31.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-28T02:16:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\xamarin.essentials\1.6.1\lib\uap10.0.16299\Xamarin.Essentials.dll">
+      <PackagePath>Xamarin.Essentials.dll</PackagePath>
+      <Modified>2021-01-26T02:38:56.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2019-12-07T03:24:14.000</Modified>
+      <Modified>2020-12-02T11:52:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\ClickUp.txt">
+      <PackagePath>ClickUp.txt</PackagePath>
+      <Modified>2021-04-14T23:05:42.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -86,35 +94,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Time Blocking App.xr.xml">
       <PackagePath>Time Blocking App.xr.xml</PackagePath>
-      <Modified>2021-04-04T07:10:51.631</Modified>
+      <Modified>2021-04-25T04:30:30.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-04-04T07:10:51.670</Modified>
+      <Modified>2021-04-25T04:30:31.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-04-04T07:10:51.671</Modified>
+      <Modified>2021-04-25T04:30:31.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Pages\HomePage.xbf">
       <PackagePath>Pages\HomePage.xbf</PackagePath>
-      <Modified>2021-04-04T07:10:51.671</Modified>
+      <Modified>2021-04-25T04:30:31.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Pages\SettingsPage.xbf">
       <PackagePath>Pages\SettingsPage.xbf</PackagePath>
-      <Modified>2021-04-04T07:10:51.671</Modified>
+      <Modified>2021-04-25T04:30:31.022</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Pages\TimeBlocksPage.xbf">
+      <PackagePath>Pages\TimeBlocksPage.xbf</PackagePath>
+      <Modified>2021-04-25T04:30:31.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2019-12-07T01:33:46.000</Modified>
+      <Modified>2020-12-02T09:52:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-04-04T07:10:52.266</Modified>
+      <Modified>2021-04-25T04:30:31.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Core\Time Blocking App.exe">
       <PackagePath>Time Blocking App.exe</PackagePath>
-      <Modified>2021-04-04T07:10:53.026</Modified>
+      <Modified>2021-04-25T04:30:32.337</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -174,36 +186,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

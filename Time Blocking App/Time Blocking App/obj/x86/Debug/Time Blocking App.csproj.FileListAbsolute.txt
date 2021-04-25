@@ -53,3 +53,12 @@ C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\
 C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112858540000000.json
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Xamarin.Essentials.dll
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Xamarin.Essentials.pdb
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Xamarin.Essentials.pri.xml
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425067200000000.json
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\bin\x86\Debug\Pages\TimeBlocksPage.xbf
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Pages\TimeBlocksPage.g.i.cs
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Pages\TimeBlocksPage.g.cs
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Pages\TimeBlocksPage.xaml
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Pages\TimeBlocksPage.xbf

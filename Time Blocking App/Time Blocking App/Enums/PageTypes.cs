@@ -12,6 +12,7 @@ namespace Time_Blocking_App.Enums
     public enum PageTypes
     {
         Home,
+        TimeBlocks,
         Settings
     }
 }

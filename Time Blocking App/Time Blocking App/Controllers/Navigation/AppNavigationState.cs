@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace Time_Blocking_App.Controllers.Navigation
 {
@@ -22,6 +23,11 @@ namespace Time_Blocking_App.Controllers.Navigation
         /// Transition function from the current state to the Home state.
         /// </summary>
         public abstract void GotoHome();
+
+        /// <summary>
+        /// Transition function from the current state to the Time Blocks state.
+        /// </summary>
+        public abstract void GotToTimeBlocks();
 
         /// <summary>
         /// Transition function from the current state to the Settings state.

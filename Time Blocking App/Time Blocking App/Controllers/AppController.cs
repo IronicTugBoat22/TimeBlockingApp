@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Time_Blocking_App.Controllers.Navigation;
 using Time_Blocking_App.Enums;
 using Time_Blocking_App.EventArguments;
+using Time_Blocking_App.Models.ClickUp;
 using Time_Blocking_App.Pages;
+using Windows.UI.Xaml.Controls;
 
 namespace Time_Blocking_App.Controllers
 {
@@ -25,6 +27,11 @@ namespace Time_Blocking_App.Controllers
         /// The current navigation state of the app.
         /// </summary>
         public AppNavigationState NavState { get; set; }
+
+        /// <summary>
+        /// Reference to currently displayed page.
+        /// </summary>
+        public Page CurrentPage { get; set; }
         #endregion
 
         #region Constructors
@@ -60,6 +67,10 @@ namespace Time_Blocking_App.Controllers
                     // Navigate to the home page.
                     this.NavState.GotoHome();
                     break;
+                case PageTypes.TimeBlocks:
+                    // Navigate to the time blocks page.
+                    this.NavState.GotToTimeBlocks();
+                    break;
                 case PageTypes.Settings:
                     // Navigate to the settings page.
                     this.NavState.GotoSettings();
@@ -77,6 +88,9 @@ namespace Time_Blocking_App.Controllers
         /// <param name="e"></param>
         private void OnNavigated(object sender, NavigatedEventArgs e)
         {
+            // Store a reference to the page as the new current page.
+            this.CurrentPage = e.PageNavigatedTo;
+
             // Subscribe to the new page's events.
             if (e.PageNavigatedTo is HomePage homePage)
             {
@@ -112,6 +126,22 @@ namespace Time_Blocking_App.Controllers
         private void ConnectedServiceRequested(object sender, ConnectServiceRequestedEventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("Nailed it");
+            //ClickUpAPIWrapper.Instance.StartOAuthAsync();
+            ClickUpAPIWrapper.Instance.StartOAuthAsync2();
+            //Uri oauthEndpoint = ClickUpAPIWrapper.Instance.GetOauthEndpoint();
+
+            // Navigate to the settings page.
+            //this.NavState.GotoSettings();
+
+            //if (this.CurrentPage is SettingsPage settingsPage)
+            //{
+            //    settingsPage.BeginAuthorizeConnection(oauthEndpoint);
+            //}
+            //else
+            //{
+            //    // If for some reason the settings page was not navigated to by the previous call...
+            //    throw new Exception("Inconsistent settings state. Expected to be on Settings Page.");
+            //}
         }
         #endregion
 
@@ -131,6 +161,23 @@ namespace Time_Blocking_App.Controllers
 
             // Navigate to the home page.
             this.NavState.GotoHome();
+        }
+
+        public void ResumeAppFromAPIAuth(MainPage rootPage)
+        {
+            // Subscribe to the root page's events.
+            rootPage.NavigationRequested += this.OnNavigationRequested;
+            rootPage.Navigated += this.OnNavigated;
+
+            // Set the given page as the root page.
+            this.RootPage = rootPage;
+
+            System.Diagnostics.Debug.WriteLine("annnnnd we back!");
+
+            // Finish the Authorization.
+            //ClickUpAPIWrapper.Instance.GetOauthTokenAsync();
+            // Navigate to the home page.
+            //this.NavState.GotoHome();
         }
         #endregion
     }

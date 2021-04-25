@@ -20,10 +20,17 @@
                                     Icon="Home"
                                     Content="Home"
                                     x:Name="HomeNavigationViewItem"></NavigationViewItem>
+                <NavigationViewItem x:ConnectionId='4' Tag="TimeBlocks"
+                                    Content="Time Blocks"
+                                    x:Name="TimeBlocksNavigationViewItem">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE152;"></FontIcon>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
 
             <ScrollViewer>
-                <Frame x:ConnectionId='4' x:Name="ContentFrame"
+                <Frame x:ConnectionId='5' x:Name="ContentFrame"
                                                          
                                                                        ></Frame>
             </ScrollViewer>

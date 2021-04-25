@@ -40,6 +40,15 @@ namespace Time_Blocking_App.Controllers.Navigation
             // Nothing to do, as already in this state.
         }
 
+        public override void GotToTimeBlocks()
+        {
+            // Instruct the view to navigate.
+            this.Controller.RootPage.Navigate(PageTypes.TimeBlocks);
+
+            // Change the state to the Home state.
+            this.Controller.NavState = new TimeBlocksState(this);
+        }
+
         public override void GotoSettings()
         {
             // Instruct the view to navigate.

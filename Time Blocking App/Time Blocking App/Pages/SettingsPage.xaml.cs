@@ -53,5 +53,20 @@ namespace Time_Blocking_App.Pages
             // Raise a request to connect the ClickUp service.
             this.RaiseConnectServiceRequested(ConnectedServiceType.ClickUp);
         }
+
+        #region Methods
+        public void BeginAuthorizeConnection(Uri requestEndpoint)
+        {
+            // Show the web view and navigate to the endpoint URI.
+            this.ConnectionAuthorizationWebViewer.Visibility = Visibility.Visible;
+            //this.ConnectionAuthorizationWebViewer.Navigate(requestEndpoint);
+            this.ConnectionAuthorizationWebViewer.Source = requestEndpoint;
+        }
+        #endregion
+
+        private void ConnectionAuthorizationWebViewer_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
+        {
+
+        }
     }
 }

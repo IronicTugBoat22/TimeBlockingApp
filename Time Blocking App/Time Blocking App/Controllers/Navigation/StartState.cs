@@ -42,9 +42,22 @@ namespace Time_Blocking_App.Controllers.Navigation
             this.Controller.NavState = new HomeState(this);
         }
 
+        public override void GotToTimeBlocks()
+        {
+            // Instruct the view to navigate.
+            this.Controller.RootPage.Navigate(PageTypes.TimeBlocks);
+
+            // Change the state to the Home state.
+            this.Controller.NavState = new TimeBlocksState(this);
+        }
+
         public override void GotoSettings()
         {
-            throw new NotImplementedException();
+            // Instruct the view to navigate.
+            this.Controller.RootPage.Navigate(PageTypes.Settings);
+
+            // Change the state to the Settings state.
+            this.Controller.NavState = new SettingsState(this);
         }
 
         public override void GoBack()

@@ -25,6 +25,10 @@
                     Content="Connect ClickUp"
                     Margin="5"
                                                       ></Button>
+            <WebView x:ConnectionId='3' x:Name="ConnectionAuthorizationWebViewer"
+                     Source="https://www.google.com"
+                     MinHeight="800"
+                                                                                               ></WebView>
         </StackPanel>
     </Grid>
 </Page>

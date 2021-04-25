@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E47kyDLUosEHoeK7bCsFoMeAQPf88HsvpLc4MI0/Fou87pHImeEQcFK072ZKEruMOxjo1Usyqa5tHq1pB8AGeg==",
+  "dgSpecHash": "0JRpIrwSaD0Rm7NFUPLC0fp5Y8oF8xFy8buuKwfRa9JFcLGDmoMseNbMtUdrh1gehjh6eeBnzUx4jWBbIZu4Dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\source\\repos\\TimeBlockingApp\\Time Blocking App\\Time Blocking App\\Time Blocking App.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,8 @@
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-x86.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
-    "C:\\Users\\micha\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512"
+    "C:\\Users\\micha\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512"
   ],
   "logs": []
 }

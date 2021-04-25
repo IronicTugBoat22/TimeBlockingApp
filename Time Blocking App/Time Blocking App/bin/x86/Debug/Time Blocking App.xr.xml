@@ -28,6 +28,10 @@
       <RootProperty Name="Icon" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Glyph" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
     </RootType>
@@ -52,7 +56,13 @@
       <RootProperty Name="Margin" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="Source" />
+      <RootProperty Name="MinHeight" />
+      <RootEvent Name="NavigationCompleted" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Time_Blocking_App.Pages.SettingsPage" />
+    <RootType FullName="Time_Blocking_App.Pages.TimeBlocksPage" />
   </Roots.RootTypes>
 </Roots>
