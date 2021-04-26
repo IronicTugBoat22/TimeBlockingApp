@@ -126,6 +126,7 @@
     <Compile Include="Controllers\Navigation\StartState.cs" />
     <Compile Include="Controllers\Navigation\TimeBlocksState.cs" />
     <Compile Include="Controllers\SingletonController.cs" />
+    <Compile Include="Converters\BoolToColorConverter.cs" />
     <Compile Include="Enums\ConnectedServiceType.cs" />
     <Compile Include="Enums\PageTypes.cs" />
     <Compile Include="EventArguments\ConnectServiceRequestedEventArgs.cs" />
@@ -136,6 +137,7 @@
     </Compile>
     <Compile Include="Models\ClickUp\ClickUpAPIWrapper.cs" />
     <Compile Include="Models\ClickUp\ClickUpCredentials.cs" />
+    <Compile Include="Models\TimeBlock.cs" />
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
@@ -188,6 +190,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit">
+      <Version>7.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp">
+      <Version>7.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI">
+      <Version>7.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>7.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.6.1</Version>
