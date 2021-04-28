@@ -110,3 +110,4 @@ C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\
 C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\en-US\Microsoft.Toolkit.Uwp.UI.Controls.Properties.Resources.resw
 C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\FxResources.System.Text.Json.SR.resw
 C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637214786760000000.json
+C:\Users\micha\source\repos\TimeBlockingApp\Time Blocking App\Time Blocking App\obj\x86\Debug\Time Blocking App.csprojAssemblyReference.cache

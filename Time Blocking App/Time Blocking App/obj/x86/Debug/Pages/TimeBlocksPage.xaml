@@ -55,20 +55,26 @@
 
     <Grid>
         <Grid Padding="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <!-- ROW 0 -->
-            <TextBlock Grid.Row="0"
-                   Style="{StaticResource HeaderTextBlockStyle}">Time Blocks</TextBlock>
 
             <!-- ROW 1 -->
             <controls:ListDetailsView x:ConnectionId='4'                                  >
+                <controls:ListDetailsView.ListHeader>
+                    <Grid Margin="0,0,0,10">
+                        <TextBlock VerticalAlignment="Center"
+                                   Style="{StaticResource SubheaderTextBlockStyle}">Time Blocks</TextBlock>
+                        <Button Margin="10"
+                                Padding="10"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right"
+                                FontFamily="Segoe MDL2 Assets"
+                                Content="&#xE710;"
+                                Flyout="{StaticResource NewTimeBlockFlyout}"></Button>
+                    </Grid>
+                </controls:ListDetailsView.ListHeader>
                 <controls:ListDetailsView.ItemTemplate>
                     <DataTemplate                              >
-                        <Grid x:ConnectionId='6' MinWidth="280">
+                        <Grid x:ConnectionId='6' MinWidth="280"
+                              Margin="5,10,5,10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"></RowDefinition>
                                 <RowDefinition Height="Auto"></RowDefinition>
@@ -80,7 +86,8 @@
 
                             <TextBlock x:ConnectionId='7' Grid.Row="0"
                                        Grid.Column="0"
-                                                           ></TextBlock>
+                                                           
+                                       Style="{StaticResource SubtitleTextBlockStyle}"></TextBlock>
 
                             <StackPanel Grid.Row="0"
                                         Grid.Column="1"
@@ -116,14 +123,80 @@
                         </Grid>
                     </DataTemplate>
                 </controls:ListDetailsView.ItemTemplate>
+                <controls:ListDetailsView.DetailsTemplate>
+                    <DataTemplate                              >
+                        <Grid x:ConnectionId='18' Margin="20,5,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" MinWidth="100"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <!-- Name -->
+                            <TextBlock x:ConnectionId='19' Grid.ColumnSpan="2"
+                                       Style="{StaticResource SubheaderTextBlockStyle}"
+                                                           ></TextBlock>
+
+                            <!-- Start -->
+                            <TextBlock Grid.Row="1"
+                                       Grid.Column="0"
+                                       Margin="0,5,0,5"
+                                       Style="{StaticResource SubtitleTextBlockStyle}"
+                                       Text="Start"></TextBlock>
+                            <TextBlock x:ConnectionId='20' Grid.Row="1"
+                                       Grid.Column="1"
+                                       Margin="0,5,0,5"
+                                       Style="{StaticResource SubtitleTextBlockStyle}"
+                                                            ></TextBlock>
+
+                            <!-- End -->
+                            <TextBlock Grid.Row="2"
+                                       Grid.Column="0"
+                                       Margin="0,5,0,5"
+                                       Style="{StaticResource SubtitleTextBlockStyle}"
+                                       Text="End"></TextBlock>
+                            <TextBlock x:ConnectionId='21' Grid.Row="2"
+                                       Grid.Column="1"
+                                       Margin="0,5,0,5"
+                                       Style="{StaticResource SubtitleTextBlockStyle}"
+                                                          ></TextBlock>
+
+                            <!-- Days of the week -->
+                            <TextBlock Grid.Row="3"
+                                       Grid.Column="0"
+                                       Margin="0,5,0,5"
+                                       Style="{StaticResource SubtitleTextBlockStyle}"
+                                       Text="Days"></TextBlock>
+                            <Grid Grid.Row="3"
+                                  Grid.Column="1"
+                                  Margin="0,5,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock x:ConnectionId='22' Grid.Column="0" Margin="5" Text="S"                                                                                  ></TextBlock>
+                                <TextBlock x:ConnectionId='23' Grid.Column="1" Margin="5" Text="M"                                                                                  ></TextBlock>
+                                <TextBlock x:ConnectionId='24' Grid.Column="2" Margin="5" Text="T"                                                                                   ></TextBlock>
+                                <TextBlock x:ConnectionId='25' Grid.Column="3" Margin="5" Text="W"                                                                                     ></TextBlock>
+                                <TextBlock x:ConnectionId='26' Grid.Column="4" Margin="5" Text="T"                                                                                    ></TextBlock>
+                                <TextBlock x:ConnectionId='27' Grid.Column="5" Margin="5" Text="F"                                                                                  ></TextBlock>
+                                <TextBlock x:ConnectionId='28' Grid.Column="6" Margin="5" Text="S"                                                                                    ></TextBlock>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </controls:ListDetailsView.DetailsTemplate>
             </controls:ListDetailsView>
-            <!--<StackPanel Grid.Row="1"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center">
-                <Button Margin="10"
-                        Content="Create Time Block"
-                        Flyout="{StaticResource NewTimeBlockFlyout}"></Button>
-            </StackPanel>-->
         </Grid>
     </Grid>
 </Page>
